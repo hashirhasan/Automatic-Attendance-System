@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Auotmatic Attendance</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="branch_prompt">Choose a Branch</string>
+    <string-array name="branch_arrays">
+        <item>IT-1</item>
+        <item>IT-2</item>
+        <item>CS-1</item>
+        <item>CS-2</item>
+        <item>CS-3</item>
+    </string-array>
+    <string-array name="subject_arrays">
+        <item>Maths</item>
+        <item>English</item>
+        <item>Physics</item>
+        <item>Computer</item>
+    </string-array>
+    <string name="depart_prompt">Choose a Department</string>
+    <string-array name="depart_arrays">
+        <item>Information Technology</item>
+        <item>Computer Science</item>
+        <item>Electrical and electronics</item>
+        <item>Mechanical Engineering</item>
+        <item>Civil Engineering</item>
+    </string-array>
+
+    <string name="gender_prompt">Choose a Gender</string>
+    <string-array name="gender_arrays">
+        <item>Male</item>
+        <item>Female</item>
+
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item><layer-list>
+
+        <item><shape>
+
+
+            <stroke android:width="2dp" android:color="#D0D0D0" />
+
+            <padding android:bottom="3dp" android:left="3dp" android:right="10dp" android:top="3dp" />
+
+        </shape></item>
+
+        <item
+            android:left="10dp"
+            android:right="20dp">
+            <bitmap
+            android:gravity="right|center"
+            android:src="@drawable/dropdown"
+            />
+
+        </item>
+
+    </layer-list></item>
+
+
+</selector>

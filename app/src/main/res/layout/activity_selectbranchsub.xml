@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Attendance_section.Upload_Attendance.selectbranchsubActivity">
+
+    <Spinner
+        android:id="@+id/subject"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="320dp"
+        android:entries="@array/subject_arrays"
+        android:prompt="@string/branch_prompt"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/branch"
+        android:layout_width="134dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginBottom="316dp"
+        android:entries="@array/branch_arrays"
+        android:prompt="@string/branch_prompt"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/takeAttendance"
+        android:layout_width="320dp"
+        android:layout_height="60sp"
+        android:layout_gravity="center"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="132dp"
+        android:background="@drawable/bordergreenupdate"
+        android:text="Take Attendance"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/branch" />
+</androidx.constraintlayout.widget.ConstraintLayout>

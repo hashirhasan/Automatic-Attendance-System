@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.auotmaticattendance">
+
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera2.full" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/attend"
+        android:icon="@mipmap/attend"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Account_Access_Section.Depart_PhoneActivity"></activity>
+        <activity
+            android:name=".Account_Access_Section.FogotPassActivity"
+            android:parentActivityName=".Account_Access_Section.LoginActivity" />
+        <activity
+            android:name=".Attendance_section.Upload_Attendance.selectbranchsubActivity"
+            android:parentActivityName=".Attendance_section.AttendanceuploadviewActivity" />
+        <activity android:name=".Account_Access_Section.GenderActivity" />
+        <activity
+            android:name=".Profile_section.EditProfileActivity"
+            android:parentActivityName=".Profile_section.MyProfileActivity" />
+        <activity
+            android:name=".Attendance_section.AttendanceuploadviewActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Account_Access_Section.StudentRegisterActivity" />
+        <activity
+            android:name=".Attendance_section.View_Attendance.ViewAttendanceActivity"
+            android:parentActivityName=".Attendance_section.AttendanceuploadviewActivity" />
+        <activity android:name=".Attendance_section.Upload_Attendance.UploadpictureActivity" />
+        <activity
+            android:name=".Attendance_section.Upload_Attendance.UploadAttendanceActivity"
+            android:parentActivityName=".Attendance_section.Upload_Attendance.selectbranchsubActivity" />
+        <activity
+            android:name=".Profile_section.MyProfileActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Account_Access_Section.SignupActivity"
+            android:parentActivityName=".Account_Access_Section.ChooseLoginRegistrationActivity" />
+        <activity
+            android:name=".Account_Access_Section.LoginActivity"
+            android:parentActivityName=".Account_Access_Section.ChooseLoginRegistrationActivity" />
+        <activity android:name=".Account_Access_Section.ChooseLoginRegistrationActivity" />
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" /> <!-- optional (needed if default theme has no action bar) -->
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
